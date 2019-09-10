@@ -1,7 +1,14 @@
 {
-  "name": "tslibrary",
-  "version": "0.0.0",
-  "description": "TypeScript template library",
+  "name": "react-csr",
+  "version": "0.0.1",
+  "description": "Avoid component server side rendered",
+  "keywords": [
+    "react",
+    "reactjs",
+    "no ssr",
+    "csr",
+    "ssr"
+  ],
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
@@ -9,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ztytotoro/TsLibrary.git"
+    "url": "git+https://github.com/ztytotoro/react-csr.git"
   },
-  "author": "",
+  "author": "ztytotoro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ztytotoro/TsLibrary/issues"
+    "url": "https://github.com/ztytotoro/react-csr/issues"
   },
-  "homepage": "https://github.com/ztytotoro/TsLibrary#readme",
+  "homepage": "https://github.com/ztytotoro/react-csr#readme",
   "devDependencies": {
     "@pika/plugin-build-node": "^0.6.0",
     "@pika/plugin-build-web": "^0.6.0",
@@ -51,5 +58,9 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "react": "^16.9.0"
   }
 }
