@@ -1,5 +1,5 @@
 {
-  "name": "react-csr",
+  "name": "@ztytotoro/react-csr",
   "version": "0.1.0",
   "description": "Avoid component server side rendered",
   "keywords": [
@@ -48,5 +48,8 @@
   },
   "dependencies": {
     "react": "^16.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ztytotoro"
   }
 }
