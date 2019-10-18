@@ -4,7 +4,8 @@ module.exports = {
   moduleDirectories: ["node_modules", "./"],
   globals: {
     "ts-jest": {
-      tsConfig: "tsconfig.test.json"
+      tsConfig: "tsconfig.test.json",
+      diagnostics: {}
     }
   },
   collectCoverage: true

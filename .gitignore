@@ -89,3 +89,5 @@ typings/
 
 # Output dir
 dist/
+
+__snapshots__/
