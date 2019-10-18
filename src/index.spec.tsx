@@ -1,5 +1,6 @@
 import { noSSR, NoSSR } from './index';
 import React from 'react';
+import { create, act, ReactTestRenderer } from 'react-test-renderer';
 
 class Com1 extends React.Component {
   render() {
@@ -38,6 +39,20 @@ const Page = () => {
         <Com1 />>
         <Com2 />>
       </NoSSR>
+      <WrappedCom1 />
+      <WrappedCom2 />
+      <WrappedCom3 />
+      <WrappedCom4 a={''} b={true} c={1} />
     </div>
   );
 };
+
+let root: ReactTestRenderer | null = null;
+
+it('can render', () => {
+  act(() => {
+    root = create(<Page />);
+  });
+
+  expect(((root as unknown) as ReactTestRenderer).toJSON()).toMatchSnapshot();
+});

@@ -4,6 +4,7 @@
     "module": "esnext",
     "baseUrl": "./",
     "strict": true,
+    "jsx": "react",
     "lib": [
       "dom",
       "es2018"

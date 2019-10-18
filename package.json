@@ -1,6 +1,6 @@
 {
-  "name": "react-csr",
-  "version": "0.1.0",
+  "name": "@ztytotoro/react-csr",
+  "version": "0.1.1",
   "description": "Avoid component server side rendered",
   "keywords": [
     "react",
@@ -13,7 +13,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest -u",
     "lint": "eslint src/**/*.ts",
     "build": "tsc"
   },
@@ -32,21 +32,28 @@
   ],
   "homepage": "https://github.com/ztytotoro/react-csr#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/react": "^16.9.2",
+    "@types/jest": "^24.0.19",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/react-test-renderer": "^16.9.1",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/typescript-estree": "^2.2.0",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.9.0",
-    "ts-jest": "^24.0.2",
+    "react-dom": "^16.10.2",
+    "react-test-renderer": "^16.10.2",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.2"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "dependencies": {
-    "react": "^16.9.0"
+    "react": "^16.10.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ztytotoro"
   }
 }
